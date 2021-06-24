@@ -51,7 +51,7 @@ If we put scanf in the while loop condition, we will read the input everytime we
 
 ```
 int input_variable;
-while (scanf("%d", input_variable) == 1) {
+while (scanf("%d", &input_variable) == 1) {
     // successfully read an integer into input_variable
     printf("Read %d", input_variable);
 }
@@ -68,7 +68,7 @@ Think about how you could use this technique alongside other control structures 
 #define PROCRASTINATE    2
 
 int command;
-while (scanf("%d", command) == 1) {
+while (scanf("%d", &command) == 1) {
 
     // successfully read an integer into command
 
